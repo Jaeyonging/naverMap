@@ -1,7 +1,7 @@
 import { db } from '../firebase/firebase';
 import { collection, query, getDocs, orderBy, doc, setDoc, getDoc, addDoc } from "firebase/firestore";
-import { Learneds, Projects } from '../types/types';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import { Learneds, Projects } from '../types/types';
 
 
 const projectQuery = query(collection(db, 'projects'), orderBy('date', 'desc'));

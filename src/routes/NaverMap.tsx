@@ -7,7 +7,7 @@ interface Props {
 
 export const NaverMap = ({ longtitude, latitude }: Props) => {
     const mapElement = useRef(null);
-    const { naver } = window;
+    const { naver }: any = window;
 
     useEffect(() => {
         if (!mapElement.current || !naver) return;
